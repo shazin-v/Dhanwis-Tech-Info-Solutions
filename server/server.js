@@ -30,7 +30,7 @@ app.put("/", (req, res) => {
     req.body.email,
     req.body.phone,
     req.body.course,
-    req.body.education
+    req.body.education,
   ];
   console.log("req body", req.body);
 

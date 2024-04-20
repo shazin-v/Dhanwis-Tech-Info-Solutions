@@ -11,7 +11,7 @@ const Home = () => {
     course: "",
     education: "",
   });
-  console.log("data",data)
+  console.log("data", data);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,31 +36,49 @@ const Home = () => {
             />
             <br />
             <label htmlFor="">Age:</label>
-            <input type="number" name="" id="" 
-            onChange={(e) => setData({age: e.target.value})}/>
+            <input
+              type="number"
+              name=""
+              id=""
+              onChange={(e) => setData({ age: e.target.value })}
+            />
             <br />
             <label htmlFor="">Email:</label>
-            <input type="text" placeholder="Enter you email" 
-            onChange={(e) => setData({email: e.target.value})}/>
+            <input
+              type="text"
+              placeholder="Enter you email"
+              onChange={(e) => setData({ email: e.target.value })}
+            />
             <br />
             <label htmlFor="">Phone Number:</label>
-            <input type="number" name="" id="" 
-            onChange={(e) => setData({phone: e.target.value})}/>
+            <input
+              type="number"
+              name=""
+              id=""
+              onChange={(e) => setData({ phone: e.target.value })}
+            />
             <br />
             <label htmlFor="">Course:</label>
-            <input type="radio" name="course" value="CSS" label='CSS' />
+            <input type="radio" name="course" value="CSS" label="CSS" />
             <input type="radio" name="course" value="HTML" />
-            <input type="radio" name="course" value="JAVA"
-            onChange={(e)=> setData({course: e.target.value})}/>
-           
+            <input
+              type="radio"
+              name="course"
+              value="JAVA"
+              onChange={(e) => setData({ course: e.target.value })}
+            />
+
             <br />
             <label htmlFor="">Educational Background:</label>
-            <select name="background" id="background" onChange={(e) => setData({education: e.target.value})}>
+            <select
+              name="background"
+              id="background"
+              onChange={(e) => setData({ education: e.target.value })}
+            >
               <option value="BCA">BCA</option>
               <option value="MCA">MCA</option>
               <option value="BBA">BBA</option>
               <option value="BA">BA</option>
-              
             </select>
             <br />
             <button className="btn btn-success" onClick={handleSubmit}>
